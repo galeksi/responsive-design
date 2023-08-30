@@ -4,35 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Mulish:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
 
   <body>
     <header>
-      <div class="header-section">
-        <div class="header-logo">
+      <div class="header-logo">
+        <a href="#">
           <img
             src="https://maido-dark.fueko.net/content/images/2020/06/maido.svg"
             alt="maido logo"
           />
-        </div>
-        <nav role="navigation">
-          <ul>
-            <li>Home</li>
-            <li>Features</li>
-            <li>Style Guide</li>
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>Demos</li>
-            <li>Get Theme</li>
-          </ul>
-          <img src="assets/search.png" alt="search button" />
-        </nav>
+        </a>
       </div>
+      <nav class="header-nav" role="navigation">
+        <ul class="header-nav__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Style Guide</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Demos</a></li>
+          <li><a href="#">Get Theme</a></li>
+          <li>
+            <a href="#">
+              <img src="assets/search-white.png" alt="search icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section>Cards</section>
+      <section class="articles-pinned">
+        <article>Large1</article>
+        <article>Small2</article>
+        <article>Small3</article>
+        <article>Small4</article>
+        <article>Small5</article>
+      </section>
       <section>Banners</section>
       <section>Articles</section>
       <section>Load more</section>

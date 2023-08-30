@@ -1,5 +1,80 @@
-h1 {
-  color: red;
+body {
+  font-family: "Mulish";
+  color: #ebebeb;
+  background-color: #252530;
 }
 
+header {
+  display: flex;
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo img {
+  height: 35px;
+}
+
+.header-nav__menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.header-nav__menu li a {
+  font-weight: 800;
+  padding: 0 0.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.header-nav__menu img {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.articles-pinned {
+  max-width: 1200px;
+  height: 400px;
+  margin: auto;
+  margin-top: 2em;
+  padding: 0 15px;
+  /* background-color: #ebebeb; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "pinned1 pinned2 pinned3"
+    "pinned1 pinned4 pinned5";
+  /* grid-gap: 0.5em 0.5em; */
+}
+
+.articles-pinned article {
+  margin: 5px;
+}
+
+.articles-pinned article:first-child {
+  grid-area: pinned1;
+  background-color: blue;
+}
+
+.articles-pinned article:nth-child(2) {
+  grid-area: pinned2;
+  background-color: blue;
+}
+
+.articles-pinned article:nth-child(3) {
+  grid-area: pinned3;
+  background-color: blue;
+}
+
+.articles-pinned article:nth-child(4) {
+  grid-area: pinned4;
+  background-color: blue;
+}
+
+.articles-pinned article:nth-child(5) {
+  grid-area: pinned5;
+  background-color: blue;
+}
 /*# sourceMappingURL=style.css.map */
