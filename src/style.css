@@ -4,6 +4,21 @@ body {
   background-color: #252530;
 }
 
+h2 {
+  font-family: "Corben";
+}
+
+h3 {
+  font-family: "Corben";
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.25em;
+  margin: 0;
+}
+
 header {
   display: flex;
   max-width: 1000px;
@@ -11,6 +26,12 @@ header {
   margin: auto;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+  max-width: 1000px;
+  padding: 15px;
+  margin: auto;
 }
 .header-logo img {
   height: 35px;
@@ -36,22 +57,20 @@ header {
 .articles-pinned {
   max-width: 1200px;
   height: 400px;
-  margin: auto;
-  margin-top: 2em;
+  margin: 20px auto;
   padding: 0 15px;
-  /* background-color: #ebebeb; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "pinned1 pinned2 pinned3"
     "pinned1 pinned4 pinned5";
-  /* grid-gap: 0.5em 0.5em; */
+  gap: 15px;
 }
 
-.articles-pinned article {
+/* .articles-pinned article {
   margin: 5px;
-}
+} */
 
 .articles-pinned article:first-child {
   grid-area: pinned1;
@@ -76,5 +95,107 @@ header {
 .articles-pinned article:nth-child(5) {
   grid-area: pinned5;
   background-color: blue;
+}
+
+.articles-main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.articles-main__banner {
+  background-color: green;
+  margin: 15px 0;
+  padding: 150px 100px;
+}
+
+.articles-main__banner__content {
+  width: 100%;
+}
+
+.articles-main__heading {
+  text-align: center;
+  max-width: 1000px;
+  /* padding: 0 15px; */
+  margin: 30px auto;
+}
+
+.articles-main__collection {
+  height: 750px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 55% 45%;
+  grid-template-areas:
+    "col1 col1 col1 col2 col2 col2"
+    "col3 col3 col4 col4 col5 col5";
+  gap: 15px;
+}
+
+.articles-main__collection article:first-child {
+  grid-area: col1;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(2) {
+  grid-area: col2;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(3) {
+  grid-area: col3;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(4) {
+  grid-area: col4;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(5) {
+  grid-area: col5;
+  background-color: red;
+}
+
+.articles-main__button {
+  color: #ebebeb;
+  background-color: #363643;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.subscribe-form {
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav__links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav__links li a {
+  font-weight: 800;
+  font-size: 0.75em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-nav__social {
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
