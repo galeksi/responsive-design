@@ -11,39 +11,54 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9ecdd4e137.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
 
   <body>
     <header>
-      <div class="header-logo">
-        <a href="#">
-          <img
-            src="https://maido-dark.fueko.net/content/images/2020/06/maido.svg"
-            alt="maido logo"
-          />
-        </a>
+      <div class="header-content">
+        <div class="header-content__logo">
+          <a href="#">
+            <img
+              src="https://maido-dark.fueko.net/content/images/2020/06/maido.svg"
+              alt="maido logo"
+            />
+          </a>
+        </div>
+        <nav class="header-content__nav" role="navigation">
+          <ul class="header-content__nav__menu">
+            <li>
+              <a href="#" class="is-active"> Home</a>
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Demos</a></li>
+            <li><a href="#">Get Theme</a></li>
+            <li>
+              <a href="#">
+                <img src="assets/search-white.png" alt="search icon" />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header-nav" role="navigation">
-        <ul class="header-nav__menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Style Guide</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Demos</a></li>
-          <li><a href="#">Get Theme</a></li>
-          <li>
-            <a href="#">
-              <img src="assets/search-white.png" alt="search icon" />
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="articles-pinned">
-        <article>Large1</article>
+        <article class="articles-pinned__large-left">
+          <a href="#"></a>
+          <div class="pin-label">Pinned</div>
+          <div class="articles-pinned__large-left__content">
+            <p>by James Bryant</p>
+            <h3>One space, so many possibilities</h3>
+          </div>
+        </article>
         <article>Small2</article>
         <article>Small3</article>
         <article>Small4</article>
@@ -51,12 +66,19 @@
       </section>
       <section class="articles-main">
         <article class="articles-main__banner">
+          <div class="articles-main__banner__background"></div>
+          <div class="articles-main__banner__pin-btn">
+            <a href="#" class="btn">case study</a>
+            <a href="#" class="btn">open space</a>
+          </div>
           <div class="articles-main__banner__content">
             <h3>The perfect place that helps you get work done in peace</h3>
+            <p>by Janet Robertson & Margaret Robertson</p>
           </div>
         </article>
         <article class="articles-main__banner">
           <div class="articles-main__banner__content">
+            <a href="#" class="btn">Test</a>
             <h3>I work best when my space is filled with inspiration</h3>
           </div>
         </article>
@@ -77,13 +99,13 @@
           <article>Small middle</article>
           <article>Small right</article>
         </div>
-        <button class="articles-main__button"><h4>load more</h4></button>
+        <button><h4>load more</h4></button>
       </section>
       <section class="subscribe-form">
         <h3>Subscribe to see what we're thinking</h3>
         <p>Start your day with Maido</p>
         <form action="">
-          <input type="text" />
+          <input type="text" placeholder="Your email address" />
         </form>
         <button><h4>subscribe</h4></button>
       </section>
@@ -100,9 +122,9 @@
           <li><a href="#">Get Theme</a></li>
         </ul>
         <div class="footer-nav__social">
-          <p>Twitter</p>
-          <p>Insta</p>
-          <p>Vimeo</p>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
         </div>
       </div>
       <div class="footer-copyright">
