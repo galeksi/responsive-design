@@ -1,0 +1,22 @@
+@use "../variables/colors";
+@use "../variables/fonts.scss";
+
+input {
+  background-color: colors.$background-color;
+  padding: 1em 5em;
+  margin: 2em 1em;
+  border: none;
+  border-bottom: 1px solid colors.$light-color;
+  color: colors.$background-light;
+  font-family: fonts.$font-main;
+  font-weight: 800;
+  text-align: center;
+  transition: 0.3s ease;
+
+  &:focus {
+    border: none;
+    border-bottom: 1px solid colors.$light-color;
+    padding: 1em 8em;
+    outline: none;
+  }
+}

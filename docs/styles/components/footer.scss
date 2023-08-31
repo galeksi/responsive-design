@@ -1,0 +1,63 @@
+@use "../variables/colors";
+
+@use "../extentions/hovers";
+
+footer {
+  max-width: 1000px;
+  padding: 15px;
+  margin: auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav__links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    position: relative;
+  }
+
+  li::before {
+    @extend .menu-hover-dot;
+    right: 4px;
+    top: 2px;
+  }
+
+  li:hover::before {
+    background: colors.$light-color;
+  }
+
+  li a {
+    font-weight: 800;
+    font-size: 0.75em;
+    padding-right: 1em;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.footer-nav__social {
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-left: 1.5em;
+  }
+
+  a {
+    color: colors.$light-color;
+  }
+
+  a:hover {
+    color: colors.$primary-color;
+  }
+}
+
+.footer-copyright {
+  font-size: 0.5em;
+}

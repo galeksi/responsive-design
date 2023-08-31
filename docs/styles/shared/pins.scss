@@ -1,0 +1,24 @@
+@use "../variables/colors";
+
+.pin-label {
+  font-size: 0.5em;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  padding: 0.5em 1em;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 1em;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.pin-light {
+  background-color: colors.$light-color;
+  color: colors.$background-color;
+}
+
+.pin-dark {
+  background-color: colors.$background-light;
+  color: colors.$light-color;
+}

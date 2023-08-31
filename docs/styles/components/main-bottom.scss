@@ -1,0 +1,38 @@
+@use "../variables/colors";
+
+.articles-main__collection {
+  height: 750px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 55% 45%;
+  grid-template-areas:
+    "col1 col1 col1 col2 col2 col2"
+    "col3 col3 col4 col4 col5 col5";
+  gap: 15px;
+}
+
+.articles-main__collection article:first-child {
+  grid-area: col1;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(2) {
+  grid-area: col2;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(3) {
+  grid-area: col3;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(4) {
+  grid-area: col4;
+  background-color: red;
+}
+
+.articles-main__collection article:nth-child(5) {
+  grid-area: col5;
+  background-color: red;
+}

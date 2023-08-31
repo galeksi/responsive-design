@@ -1,0 +1,67 @@
+@use "../variables/colors";
+
+@use "../extentions/hovers";
+
+header {
+  background-color: colors.$background-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  max-width: 1000px;
+  height: 60px;
+  padding: 0 20px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content__logo img {
+  height: 35px;
+}
+
+.header-content__nav__menu {
+  display: flex;
+  list-style-type: none;
+
+  li {
+    position: relative;
+  }
+
+  li a {
+    font-weight: 800;
+    padding: 0 0.5em;
+    text-decoration: none;
+    color: white;
+  }
+
+  img {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  li::before {
+    @extend .menu-hover-dot;
+    right: 0;
+    top: 0;
+  }
+
+  li:hover::before {
+    background-color: colors.$light-color;
+  }
+}
+
+.is-active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: colors.$primary-color;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+}

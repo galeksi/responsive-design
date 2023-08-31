@@ -1,3 +1,48 @@
-h1 {
-  color: red;
+@use "./variables/colors";
+@use "./variables/fonts";
+
+@use "./components/header";
+@use "./components/footer";
+@use "./components/subscribe-form";
+@use "./components/main-top";
+@use "./components/main-middle";
+@use "./components/main-bottom";
+
+@use "./shared/buttons";
+@use "./shared/input";
+@use "./shared/pins";
+@use "./shared/header-devider";
+
+body {
+  font-family: fonts.$font-main;
+  color: colors.$light-color;
+  background-color: colors.$background-color;
 }
+
+p {
+  font-size: 0.75em;
+}
+
+h2 {
+  font-family: fonts.$font-header;
+}
+
+h3 {
+  font-family: fonts.$font-header;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-top: 0.2em;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.25em;
+  margin: 0;
+}
+
+main {
+  padding-top: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */
