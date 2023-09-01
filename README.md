@@ -56,7 +56,3 @@ Template homepage link (Dark version): https://preview.themeforest.net/item/maid
 ## Public link
 
 https://galeksi.github.io/responsive-design/
-
-## ToDo
-
-The lower element of the lower main part (Article collection) is not styled. Only grid is applied.

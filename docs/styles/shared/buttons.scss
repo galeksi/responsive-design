@@ -18,16 +18,30 @@ button {
   font-size: 0.4em;
   letter-spacing: 0.2em;
   text-decoration: none;
-  color: colors.$light-color;
   text-transform: uppercase;
   font-weight: 800;
-  border: colors.$light-color solid 1px;
   border-radius: 1.5em;
   padding: 0.5em 1em;
   margin-right: 1em;
+}
+
+.btn-light {
+  color: colors.$light-color;
+  border: colors.$light-color solid 1px;
 
   &:hover {
     color: colors.$background-color;
     background-color: colors.$light-color;
+  }
+}
+
+.btn-dark {
+  color: colors.$background-light;
+  border: colors.$background-light solid 1px;
+  background-color: transparent;
+
+  &:hover {
+    color: colors.$light-color;
+    background-color: colors.$background-light;
   }
 }

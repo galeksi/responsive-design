@@ -1,6 +1,9 @@
 @use "../variables/colors";
 
-.articles-main__collection {
+@use "../extentions/banner-articles";
+@use "../extentions/hovers";
+
+.articles__collection {
   height: 750px;
   margin-bottom: 30px;
   display: grid;
@@ -10,29 +13,127 @@
     "col1 col1 col1 col2 col2 col2"
     "col3 col3 col4 col4 col5 col5";
   gap: 15px;
+
+  article:first-child {
+    grid-area: col1;
+    color: colors.$background-light;
+  }
+
+  article:nth-child(2) {
+    grid-area: col2;
+    color: colors.$background-light;
+  }
+
+  article:nth-child(3) {
+    grid-area: col3;
+
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  article:nth-child(4) {
+    grid-area: col4;
+    color: colors.$background-light;
+
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  article:nth-child(5) {
+    grid-area: col5;
+
+    h3 {
+      font-size: 1em;
+    }
+
+    hr {
+      background-color: colors.$light-color;
+    }
+  }
 }
 
-.articles-main__collection article:first-child {
-  grid-area: col1;
-  background-color: red;
+.articles__collection__element {
+  padding: 4em 40px 25px 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  position: relative;
 }
 
-.articles-main__collection article:nth-child(2) {
-  grid-area: col2;
-  background-color: red;
+.articles__collection__content {
+  position: relative;
+  z-index: 1;
+
+  @extend .icon-hover;
 }
 
-.articles-main__collection article:nth-child(3) {
-  grid-area: col3;
-  background-color: red;
+.articles__collection__background--one {
+  @extend .banner-image-setting;
+  background-image: url("https://images.unsplash.com/photo-1487015307662-6ce6210680f1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+
+  &::before {
+    @extend .banner-overlay-setting;
+    background-color: rgba(colors.$color-purple, 0.8);
+  }
 }
 
-.articles-main__collection article:nth-child(4) {
-  grid-area: col4;
-  background-color: red;
+.articles__collection__element:hover .articles__collection__background--one {
+  @extend .banner-zoom-setting;
 }
 
-.articles-main__collection article:nth-child(5) {
-  grid-area: col5;
-  background-color: red;
+.articles__collection__background--two {
+  @extend .banner-image-setting;
+  background-image: url("https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+
+  &::before {
+    @extend .banner-overlay-setting;
+    background-color: rgba(colors.$primary-color, 0.9);
+  }
+}
+
+.articles__collection__element:hover .articles__collection__background--two {
+  @extend .banner-zoom-setting;
+}
+
+.articles__collection__background--three {
+  @extend .banner-image-setting;
+  background-image: url("https://images.unsplash.com/photo-1528441397448-a44d50563cf8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+
+  &::before {
+    @extend .banner-overlay-setting;
+    background-color: rgba(colors.$background-color, 0.4);
+  }
+}
+
+.articles__collection__element:hover .articles__collection__background--three {
+  @extend .banner-zoom-setting;
+}
+
+.articles__collection__background--four {
+  @extend .banner-image-setting;
+  background-image: url("https://images.unsplash.com/photo-1562185022-c0a7889d7fbb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+
+  &::before {
+    @extend .banner-overlay-setting;
+    background-color: rgba(colors.$color-rose, 0.9);
+  }
+}
+
+.articles__collection__element:hover .articles__collection__background--four {
+  @extend .banner-zoom-setting;
+}
+
+.articles__collection__background--five {
+  @extend .banner-image-setting;
+  background-image: url("https://images.unsplash.com/photo-1551216223-37c8d1dbec5c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+
+  &::before {
+    @extend .banner-overlay-setting;
+    background-color: rgba(colors.$background-color, 0.4);
+  }
+}
+
+.articles__collection__element:hover .articles__collection__background--five {
+  @extend .banner-zoom-setting;
 }

@@ -31,7 +31,7 @@ h3 {
   font-family: fonts.$font-header;
   font-size: 1.5em;
   line-height: 1.5em;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
 }
 
 h4 {
@@ -42,11 +42,20 @@ h4 {
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 0.8em;
+  margin-block-start: 0.5em;
 }
 
 main {
   padding-top: 45px;
+}
+
+hr {
+  height: 2px;
+  background-color: colors.$background-light;
+  border: none;
+  width: 50px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
