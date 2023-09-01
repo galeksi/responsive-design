@@ -141,21 +141,28 @@ footer {
   padding: 0 8em;
   text-align: center;
 }
-.subscribe-form p {
-  overflow: hidden;
+
+.type {
+  display: inline-flex;
+}
+.type span {
+  font-family: "Mulish", Arial, sans-serif;
+  font-weight: 800;
   border-right: 0.2em solid #ebebeb;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+  height: 1.2em;
+  width: 0%;
+  overflow: hidden;
+  animation: typing 3s linear infinite alternate, blink-caret 0.75s step-end infinite;
+}
+.type span:before {
+  content: " ";
+  display: inline-block;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 191px;
+  90%, 100% {
+    width: 100%;
   }
 }
 @keyframes blink-caret {
