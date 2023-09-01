@@ -1,19 +1,62 @@
-# Responsive design
+# Introduction
 
-Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705)(see 'Dark version') and create a similar webpage
+Responsive homepage rebuild with HTML and SASS. No Javascript.
+Template homepage link (Dark version): https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705
 
-## Requirements
+## Content
 
-1. Position the HTML elements using Flexbox and Grid system
-2. Implement basic animations as shown in the webpage (hover effect,
-active link styles, typing effect). You can modify the outlook of the effects
-3. Deploy your web page, using the platform of your choice (For example, Github Pages).
-4. This assignment requires the implementation of SASS.
-5. Rewrite README file with good structure. Add unnecessary files and folders to `.gitignore`
+- Header
+- Pinned articles
+- Main banner articles
+- Article collection
+- Newsletter subscription
+- Footer
 
-This assignment only requires 1 static page. No JavaScript needed.
-Font family and text content can be modified as your preferences.
-The web page does not need to be fully responsive, but at least you should
-have responsive scaling for Flexbox and Grid system.
+## Technologies
 
+- HTML
+- CSS
+- SASS
 
+## Structure
+
+```
+.
+├── docs
+│   ├── index.html
+│   ├── style.css
+│   ├── style.css.map
+│   └── styles
+│       ├── components
+│       │   ├── footer.scss
+│       │   ├── header.scss
+│       │   ├── main-bottom.scss
+│       │   ├── main-middle.scss
+│       │   ├── main-top.scss
+│       │   └── subscribe-form.scss
+│       ├── extentions
+│       │   ├── banner-articles.scss
+│       │   ├── hovers.scss
+│       │   └── pinned-articles.scss
+│       ├── shared
+│       │   ├── buttons.scss
+│       │   ├── header-devider.scss
+│       │   ├── input.scss
+│       │   └── pins.scss
+│       ├── style.scss
+│       └── variables
+│           ├── colors.scss
+│           └── fonts.scss
+├── node_modules
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## Public link
+
+https://galeksi.github.io/responsive-design/
+
+## ToDo
+
+The lower element of the lower main part (Article collection) is not styled. Only grid is applied.
